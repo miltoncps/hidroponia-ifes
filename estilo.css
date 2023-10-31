@@ -1,0 +1,119 @@
+:root {
+    --cor-coluna-esquerda: #71c98b; /* Cor da coluna esquerda */
+    --cor-coluna-direita: #e5e5e5; /* Cor da coluna direita */
+    --cor-logo: #00571a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+
+.coluna {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: rgb(56, 56, 56);
+}
+
+.coluna-esquerda {
+    color: white;
+    max-width: 200px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: var(--cor-coluna-esquerda);
+    border-right: 1px solid var(--cor-logo);
+}
+
+.coluna-direita h1 {
+    margin-bottom: 25px;
+}
+
+.coluna-direita {
+    flex-grow: 4;
+
+    background-color: var(--cor-coluna-direita);
+}
+h1{
+    margin-top: 60px;
+}
+.info{
+    margin-left: 30px;
+    padding: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    
+}
+.botoes{margin-left: -550px;
+    padding-bottom: 2px;
+}
+.botoes button {
+    margin-top: 5px;
+    margin-bottom: 3px;
+    background-color: #71c98b;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px 8px 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .5s;
+    
+}
+
+.botoes a{
+    text-decoration: none;
+    color: rgb(56, 56, 56);
+    transition: .5s;
+
+}
+.botoes a:hover{
+    text-decoration: none;
+    color: white;
+
+}
+.botoes button:hover{background-color: #00571a;
+color: white;
+border: 1px solid black;
+border-radius: 20px;
+}
+.coluna-esquerda ul {
+    list-style: none;
+    padding: 0;
+}
+
+.coluna-esquerda li {
+    margin-bottom: 10px;
+}
+
+.coluna-esquerda a {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--cor-logo);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+}
+
+.coluna-esquerda a:hover {   
+    background-color: var(--cor-coluna-esquerda);
+    color:black;    
+    font-weight: 600;
+}
+
+.coluna-esquerda a iconify-icon {
+    margin-right: 10px;
+}
