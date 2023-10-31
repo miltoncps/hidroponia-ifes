@@ -23,6 +23,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     color: rgb(56, 56, 56);
 }
 
@@ -44,7 +45,48 @@ body {
 
     background-color: var(--cor-coluna-direita);
 }
+h1{
+    margin-top: 60px;
+}
+.info{
+    margin-left: 30px;
+    padding: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    
+}
+.botoes{margin-left: -550px;
+    padding-bottom: 2px;
+}
+.botoes button {
+    margin-top: 5px;
+    margin-bottom: 3px;
+    background-color: #71c98b;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px 8px 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .5s;
+    
+}
 
+.botoes a{
+    text-decoration: none;
+    color: rgb(56, 56, 56);
+    transition: .5s;
+
+}
+.botoes a:hover{
+    text-decoration: none;
+    color: white;
+
+}
+.botoes button:hover{background-color: #00571a;
+color: white;
+border: 1px solid black;
+border-radius: 20px;
+}
 .coluna-esquerda ul {
     list-style: none;
     padding: 0;
